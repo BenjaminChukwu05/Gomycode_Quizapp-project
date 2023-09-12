@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, compatibility, and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the website -->
+    <title>WEBSITE WITH LOGIN & REGISTRATION | BrainBoxed.</title>
+
+    <!-- Link to an external CSS stylesheet -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- Header section containing the website logo, navigation menu, and login button -->
+    <header>
+        <h2 class="logo">BrainBoxed.</h2>
+        <nav class="navigation">
+            <!-- Navigation links -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Explore</a>
+            <a href="#">Contact</a>
+            <!-- Login button -->
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+        <!-- Close button for the login and registration forms -->
+        <span class="icon-close">
+            <!-- Icon for closing the form -->
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <!-- Login form -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <!-- Input field for email -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- Icon for email input -->
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <!-- Email input field -->
+                    <input type="email" required>
+                    <!-- Label for email input -->
+                    <label>Email</label>
+                </div>
+                <!-- Input field for password -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- Icon for password input -->
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <!-- Password input field -->
+                    <input type="password" required>
+                    <!-- Label for password input -->
+                    <label>Password</label>
+                </div>
+                <!-- Checkbox for remembering the login -->
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <!-- Link for forgotten password -->
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <!-- Login button -->
+                <button type="submit" class="btn">
+                    <a href="./QuizStart.html">Login</a>
+                </button>
+                <!-- Link to register -->
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration form -->
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <!-- Input field for username -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- Icon for username input -->
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <!-- Username input field -->
+                    <input type="text" id="username" required>
+                    <!-- Label for username input -->
+                    <label for="username">Username:</label>
+                </div>
+                <!-- Input field for email -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- Icon for email input -->
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <!-- Email input field -->
+                    <input type="email" id="email" required>
+                    <!-- Label for email input -->
+                    <label for="email">Email:</label>
+                </div>
+                <!-- Input field for password -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- Icon for password input -->
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <!-- Password input field with a minimum length requirement -->
+                    <input type="password" id="password" required minlength="8">
+                    <!-- Label for password input -->
+                    <label for="password">Password</label>
+                </div>
+                <!-- Checkbox for agreeing to terms and conditions -->
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        I agree to the terms & conditions
+                    </label>
+                </div>
+                <!-- Registration button -->
+                <button type="submit" class="btn">
+                    <a href="#" class="reg-btn" disabled>Register</a>
+                </button>
+                <!-- Link to login -->
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script2.js"></script>
+    <!-- Script for loading Ionicons with ECMAScript module support -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Fallback script for browsers without module support -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

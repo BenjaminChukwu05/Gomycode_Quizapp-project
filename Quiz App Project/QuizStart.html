@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, compatibility, and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form in Html and CSS | from Codehal</title>
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="./QuizStart.css" />
+    <!-- Link to an external icon library -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body>
+    <!-- Main container to hold all content -->
+    <main class="main">
+      <!-- Header section, including logo and navigation links -->
+      <header>
+        <h2 class="logo">BrainBoxed.</h2>
+        <nav class="navigation">
+          <a href="#" class="active">Home</a>
+          <a href="About.html">About</a>
+          <a href="services.html">Explore</a>
+          <a href="contact.html">Contact</a>
+          <!-- Login button (commented out) -->
+          <!-- <button class="btnLogin-popup">Login</button> -->
+        </nav>
+      </header>
+      <!-- Header section end -->
+
+      <!-- Main content container -->
+      <div class="container">
+        <!-- Section for the quiz itself -->
+        <section class="quiz-section">
+          <!-- Quiz box containing quiz-related content -->
+          <div class="quiz-box">
+            <h1>BrainBoxed Quiz</h1>
+            <div class="quiz-header">
+              <span>Quiz Website</span>
+              <span class="header-score">Score: 0 / 5</span>
+            </div>
+
+            <h2 class="question-text">QUESTION</h2>
+
+            <div class="option-list">
+              <!-- Preview format for quiz options (commented out) -->
+              <!-- <div class="option">
+                <span>A. </span>
+              </div>
+              <div class="option">
+                <span>B. </span>
+              </div>
+              <div class="option">
+                <span>C. </span>
+              </div>
+              <div class="option">
+                <span>D. </span>
+              </div> -->
+              <!-- End of preview format -->
+            </div>
+
+            <!-- Footer section for quiz navigation -->
+            <div class="quiz-footer">
+              <span class="question-total">1 of 5 Questions</span>
+              <button class="next-btn">Next</button>
+            </div>
+            <!-- Footer section end -->
+          </div>
+          <!-- Quiz box end -->
+
+          <!-- Result box displayed after completing the quiz -->
+          <div class="result-box">
+            <h2>Quiz Result!</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+
+              <span class="score-text">Your Score 0 out of 5</span>
+            </div>
+
+            <div class="buttons">
+              <button class="tryAgain-btn">Try Again</button>
+              <button class="goHome-btn">Go To Home</button>
+            </div>
+          </div>
+          <!-- Result box end -->
+        </section>
+        <!-- Quiz section end -->
+
+        <!-- Landing page section -->
+        <section class="home">
+          <div class="home-content">
+            <h1>Quiz Website</h1>
+            <p>
+              Are you ready to challenge your knowledge, have fun, and learn something new? Look no further!
+              BrainBoxed offers a some helpful questions that cater to diverse current intellectual needs, from general 
+              knowledge to niche areas. Whether you're a trivia enthusiast, a beginner, an experienced individaul simply looking 
+              to test your skills, we have something for you.
+            </p>
+            <button class="start-btn">Start Quiz</button>
+          </div>
+        </section>
+        <!-- Landing page section end -->
+      </div>
+      <!-- Main content container end -->
+    </main>
+    <!-- Main container end -->
+
+    <!-- Popup for quiz guide -->
+    <div class="popup-info">
+      <h2>Quiz Guide</h2>
+      <span class="info">1. Read all options before selecting your answer.</span><br>
+      <span class="info">2. There's no penalty for incorrect answers, make an educated guess if you're unsure.</span><br>
+      <span class="info">3.  If you encounter challenging questions, stay calm and composed. Panic can lead to poor decision-making.</span><br>
+      <span class="info">4. Carefully read and understand each question before attempting to answer.</span><br>
+      <span class="info">5. Regardless of the quiz's outcome, acknowledge your effort and commitment to learning.</span><br>
+
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+      </div>
+    </div>
+    <!-- Popup end -->
+
+    <!-- JavaScript files for functionality -->
+    <script src="questions.js"></script>
+    <script src="QuizStart.js"></script>
+  </body>
+</html>

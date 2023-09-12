@@ -1,0 +1,229 @@
+/* Reset default margin, padding, and font for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Set the background image for the entire page, cover the entire viewport */
+body {
+    background: url('wallhaven-l8kw5p_1920x1080.png') no-repeat;
+    background-size: cover;
+}
+
+/* Define the header styles */
+.header {
+    /* Fix the header at the top of the page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: transparent; /* Make the header background transparent */
+}
+
+/* Define the logo styles */
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    /* Add a drop shadow effect to the logo */
+    filter: drop-shadow(0 0 10px #000);
+}
+
+/* Define the navigation links styles */
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* Style for the navigation links when hovered or active */
+.navigation a:hover,
+.navigation a.active {
+    color: #c40094;
+}
+
+/* Create an underline effect for the navigation links when hovered */
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+/* Animate the underline effect to expand from left to right when hovered */
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Define styles for the login button in the navigation bar */
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+/* Style the login button on hover */
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+/* Create space below the header */
+.contain {
+    margin-top: 100px;
+}
+
+/* Style for the main heading */
+h1 {
+    text-align: center;
+    margin: 50px auto 120px !important;
+    color: #fff;
+    /* Add a drop shadow effect to the heading */
+    filter: drop-shadow(0 0 5px #000);
+}
+
+/* Define styles for the main content area */
+.main {
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style for the service boxes */
+.service {
+    background: #09001d;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /* Add a box shadow effect */
+    box-shadow: 0 0 20px -15px #fff;
+    transition: transform .8s;
+}
+
+/* Style for the service logo */
+.service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: transparent;
+    /* Add a camouflage border to isolate the image from the background */
+    border-color: 18px solid transparent;
+}
+
+/* Style for the service logo's image */
+.service-log img {
+    margin-top: 20px;
+    width: 50px;
+    margin-top: 10px;
+    transition: transform 1s;
+}
+
+/* Style for the service title */
+.service h4 {
+    height: 35px;
+    width: 80%;
+    background: #09001d;
+    margin: 50px auto;
+    position: relative;
+    color: #fff;
+}
+
+/* Create an overlapping gradient effect for the service title */
+.service h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #c40094);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+/* Create an overlapping gradient effect for the service title */
+.service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #c40094, #fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+/* Style for the service description */
+.service p {
+    color: #fff;
+}
+
+/* Create shadow elements beneath the service boxes */
+.shadowOne {
+    height: 200px;
+    width: 80%;
+    background: #09001d;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    /* Add a box shadow effect */
+    box-shadow: 0 0 20px -15px #fff;
+    transition: transform .8s;
+}
+
+/* Create another shadow element beneath the service boxes */
+.shadowTwo {
+    height: 200px;
+    width: 64%;
+    background: #09001d;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+
+/* Add hover effects to the service boxes, shadows, and images */
+.main:hover .service {
+    transform: translateY(-50px);
+}
+
+.main:hover .shadowOne {
+    transform: translateY(-25px);
+}
+
+.main:hover img {
+    transform: rotate(360deg);
+}
